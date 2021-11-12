@@ -3,6 +3,7 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --white-color: #ffffff;
+  --light-color: #f5f4fa;
 }
 p,
 h1,
@@ -24,7 +25,7 @@ ul {
   padding-left: 15px;
 }
 body {
-  background-color: ;
+  background-color: var(--white-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.02em;
@@ -35,7 +36,7 @@ body {
   background-color: var(--white-color);
   padding-top: 24px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 .navigation {
   display: flex;
@@ -67,7 +68,9 @@ body {
   line-height: 1.2px;
   letter-spacing: 0.03em;
   text-decoration: none;
-  padding-right: 93px;
+}
+.logo-header {
+  margin-right: 93px;
 }
 .logo-webstudio {
   color: var(--accent-color);
@@ -112,11 +115,12 @@ body {
   color: var(--accent-color);
 }
 /*------------hero--------------*/
+
 .hero {
   background-color: #2f303a;
   margin-left: auto;
   margin-right: auto;
-  text-align: center; 
+  text-align: center;
 }
 .hero-title {
   color: var(--white-color);
@@ -137,9 +141,10 @@ body {
   letter-spacing: 0.06em;
   cursor: pointer;
   border-radius: 4px;
+  border-color: var(--accent-color);
 }
 .item-button {
-    padding-bottom: 200px;
+  padding-bottom: 200px;
 }
 .button.primary {
   background-color: var(--accent-color);
@@ -147,20 +152,20 @@ body {
 }
 /*--------------section company-----------*/
 .section {
-    margin-top: 94px;
-    margin-bottom: 94px; 
+  margin-top: 94px;
+  margin-bottom: 94px;
 } /*------ДЛЯ ВСЕХ СЕКЦИЙ--------*/
 .company {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .item-company {
-    width: 270px;
-    height: 101px;
+  width: 270px;
+  margin: 0 auto;
 }
-.item-company:not(:last-child){
-    margin-right: 30px;
+.item-company:not(:last-child) {
+  margin-right: 30px;
 }
 .company .title {
   color: var(--title-text-color);
@@ -176,16 +181,16 @@ body {
   padding: 10px 0px 0px 0px;
 }
 /* ----------section service-------- */
-.activity-nave{
-    display: flex;
-    flex-wrap: wrap;
+.activity-nave {
+  display: flex;
+  flex-wrap: wrap;
 }
 .item-service {
-    width: 370px;
-    margin-top: 50px;
+  width: 370px;
+  margin-top: 50px;
 }
 .item-service:not(:last-child) {
-    margin-right: 30px;
+  margin-right: 30px;
 }
 .section-title {
   color: var(--title-text-color);
@@ -197,21 +202,29 @@ body {
 }
 /*----------command------------*/
 .font-section {
-    background-color: #F5F4FA;
+  background-color: var(--light-color);
 }
 .our-team {
-    padding-top: 94px;
-    padding-bottom: 50px;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.title-name {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.work {
+  padding-bottom: 30px;
 }
 .command-nave {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 .command-people {
-    margin-right: 30px;
+  margin-right: 30px;
+  margin-bottom: 94px;
 }
-.command-people:nth-child(4n){
-    margin-right: 0px;
+.command-people:nth-child(4n) {
+  margin-right: 0px;
 }
 .command-nave .title {
   color: var(--title-text-color);
@@ -228,8 +241,19 @@ body {
   text-align: center;
 }
 /*-----------footer------------*/
+.footer-bgr {
+  background-color: #2f303a;
+}
 .footer-link {
-    background-color: #2F303A;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  flex-direction: column;
+}
+.contact-footer {
+  padding-top: 20px;
+}
+.location:not(:last-child) {
+  padding-bottom: 9px;
 }
 .contact-footer .nave {
   color: var(--white-color);
@@ -251,6 +275,31 @@ body {
 }
 /* --------------------СТРАНИЦА PORTFOLIO------------------*/
 /*-------Фильтр----------*/
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.shade-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+.button-settings:not(:last-child) {
+  margin-right: 8px;
+}
 .nav-button {
   background-color: #f5f4fa;
   color: #212121;
@@ -260,6 +309,8 @@ body {
   line-height: 1.62;
   letter-spacing: 0.03em;
   cursor: pointer;
+  border-radius: 4px;
+  border-color: var(--white-color);
 }
 .nav-button:focus,
 .nav-button:hover {
@@ -267,12 +318,30 @@ body {
   color: var(--white-color);
 }
 /*-----------Наши работы и проекты----------*/
+
+.nav-jobs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 94px;
+}
+.box-job {
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.box-job:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+.box-job:nth-last-child(3n + 1) {
+  margin-right: 0px;
+}
 .jobs-name {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  padding: 20px 24px 4px 24px;
 }
 .job {
   color: var(--primary-text-color);
@@ -280,4 +349,5 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  padding: 4px 24px 20px 24px;
 }
