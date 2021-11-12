@@ -276,22 +276,6 @@ body {
 }
 /* --------------------СТРАНИЦА PORTFOLIO------------------*/
 /*-------Фильтр----------*/
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-p,
-h1,
-h2,
-h3 {
-  margin: 0;
-}
-ul {
-  margin: 0;
-  padding: 0;
-}
 .shade-button {
   display: flex;
   justify-content: center;
