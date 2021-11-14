@@ -271,7 +271,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
@@ -280,7 +280,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
@@ -289,8 +289,8 @@ body {
 .shade-button {
   display: flex;
   justify-content: center;
-  margin-top: 94px;
-  margin-bottom: 50px;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 .button-settings:not(:last-child) {
   margin-right: 8px;
@@ -319,7 +319,7 @@ body {
 .nav-jobs {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 .box-job {
   display: block;
