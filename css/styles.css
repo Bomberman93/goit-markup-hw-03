@@ -286,11 +286,16 @@ body {
 }
 /* --------------------СТРАНИЦА PORTFOLIO------------------*/
 /*-------Фильтр----------*/
+.section-button {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.container-button {
+  margin-bottom: 50px;
+}
 .shade-button {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 50px;
 }
 .button-settings:not(:last-child) {
   margin-right: 8px;
@@ -319,7 +324,6 @@ body {
 .nav-jobs {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
 }
 .box-job {
   display: block;
